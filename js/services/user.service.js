@@ -3,8 +3,8 @@
 const STORAGE_KEY = 'bookDB';
 const bookNames = ['Harry Potter', 'Kafka on the Shore', 'easy way to stop smoking'];
 
-var gId = 1;
 var gBooks;
+var gId = 1;
 
 createBooks();
 function createBook(bookName, price = +getRandomIntInclusive(40, 80).toFixed(2)) {
@@ -44,9 +44,10 @@ function removeBook(bookId) {
   _saveBooksToStorage();
 }
 
-function addBook(bookName, price) {
-  const book = createBook(bookName, price);
+function addBook(bookName, price, id) {
+  const book = createBook(bookName, price, id);
   gBooks.unshift(book);
+
   _saveBooksToStorage();
   return book;
 }
@@ -69,8 +70,7 @@ function getBooks() {
 
 function changeRating(diff, bookId) {
   const book = getBookById(bookId);
-  console.log(book);
-  book.rate = book.rate + diff;
+  book.rate += diff;
   _saveBooksToStorage();
   return book;
 }

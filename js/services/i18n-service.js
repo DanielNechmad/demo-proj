@@ -21,6 +21,18 @@ var gTrans = {
     es: 'Nombre del libro',
     he: 'שם הספר',
   },
+  firstBookName: {
+    en: 'Harry Potter',
+    he: 'הארי פוטר',
+  },
+  secondBookName: {
+    en: 'Kafka on the Shore',
+    he: 'קפקא על החוף',
+  },
+  thirdBookName: {
+    en: 'easy way to stop smoking',
+    he: 'הדרך הקלה להפסיק לעשן ',
+  },
   price: {
     en: 'Price',
     es: 'Precio',
