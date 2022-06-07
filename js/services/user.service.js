@@ -13,7 +13,7 @@ function createBook(bookName, price = +getRandomIntInclusive(40, 80).toFixed(2))
     bookName,
     price,
     imgUrl: '',
-    about: makeLorem(20),
+    about: makeLorem(80),
     aboutAuthor: makeLorem(10),
     rate: 0,
   };

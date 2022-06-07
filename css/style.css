@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Joan&family=Oswald:wght@300&display=swap');
 * {
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
@@ -17,6 +16,9 @@ body {
 }
 body.rtl {
   direction: rtl;
+}
+.rate-number {
+  font-size: 20px;
 }
 
 .book-content {
@@ -68,8 +70,7 @@ td {
 /* } */
 .modal {
   background-color: rgba(82, 188, 161, 0.948);
-  width: auto;
-  position: fixed;
+
   padding-left: 10px;
   padding-bottom: 10px;
   display: none;

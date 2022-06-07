@@ -28,8 +28,7 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
         </header>
         <br />
      
-        <!-- <button data-trans="createNewBook" class="btn new-book" onclick="onAddBook()">Create new book</button> -->
-        <button type="button" class="btn btn-success" onclick="onAddBook()">Create new book</button>
+        <button data-trans="createNewBook" type="button" class="btn btn-link"  onclick="onAddBook()">Create new book</button>
         <br>
         <br>
         <tr>
@@ -52,14 +51,14 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
       <p class="about-book"></p>
       <h5>About this author:</h5>
       <p class="about-author"></p>
-      <button class="btn close-modal" onclick="onCloseModal()">close</button>
+      <button type="button" class="btn btn-secondary" onclick="onCloseModal()">close</button>
       <br>
       <br>
 			<div class="rating">
         
-				<button disabled onclick="onChangeRate(this, false)">-</button>
-				<span>0</span>
-				<button onclick="onChangeRate(this, true)">+</button>
+        <button type="button" class="btn btn-light" disabled onclick="onChangeRate(this, false)">-</button>
+				<span class="rate-number">0</span>
+        <button type="button" class="btn btn-light" onclick="onChangeRate(this, true)">+</button>
 			</div>
     </div>
 
